@@ -27,4 +27,7 @@ login_manager.login_view = 'users.login'
 #### BLUEPRINT SETUP ####
 #########################
 from connectflow.core.views import core
+from connectflow.users.views import users
+
 app.register_blueprint(core)
+app.register_blueprint(users)
