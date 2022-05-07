@@ -1,7 +1,7 @@
 from flask import render_template, url_for, flash, redirect, request, Blueprint
 
-netowrks = Blueprint('netowrks', __name__)
+networks = Blueprint('networks', __name__)
 
-@netowrks.route('/netowrks')
+@networks.route('/networks')
 def find(): 
-    return '<h1>netowrks</h1>'
+    return '<h1>networks</h1>'
