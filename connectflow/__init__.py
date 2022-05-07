@@ -32,6 +32,7 @@ from connectflow.users.views import users
 from connectflow.numbers.views import numbers
 from connectflow.pservers.views import pservers
 from connectflow.vservers.views import vservers
+from connectflow.customers.views import customers
 
 app.register_blueprint(core)
 app.register_blueprint(error)
@@ -39,4 +40,7 @@ app.register_blueprint(users)
 app.register_blueprint(numbers)
 app.register_blueprint(pservers)
 app.register_blueprint(vservers)
+app.register_blueprint(customers)
+
+
 
