@@ -27,7 +27,7 @@
         <a href="{{url_for('core.index')}}">커넥트플로우</a>
       </li>
       <li class="nav-link">
-        <a href="#">상담AP</a>
+        <a href="{{url_for('ap.frame')}}">상담프로그램</a>
       </li>
 
       {% if current_user.is_authenticated %}
@@ -54,10 +54,10 @@
       </li>
       {% else %}
       <li class="nav-link">
-        <a href="#">관리자 로그인</a>
+        <a href="#">로그인(관리자)</a>
       </li>
       <li class="nav-link">
-        <a href="#">관리자 등록</a>
+        <a href="#">등록(관리자)</a>
       </li>
       {% endif %}
     </ul>

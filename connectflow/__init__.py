@@ -35,6 +35,7 @@ from connectflow.vservers.views import vservers
 from connectflow.customers.views import customers
 from connectflow.partners.views import partners
 from connectflow.networks.views import networks
+from connectflow.ap.views import ap
 
 app.register_blueprint(core)
 app.register_blueprint(error)
@@ -45,5 +46,4 @@ app.register_blueprint(vservers)
 app.register_blueprint(customers)
 app.register_blueprint(partners)
 app.register_blueprint(networks)
-
-
+app.register_blueprint(ap)
