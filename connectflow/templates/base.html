@@ -20,6 +20,50 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <ul class="nav">
+      <li class="nav-link">
+        <a href="{{url_for('core.index')}}">커넥트플로우</a>
+      </li>
+      <li class="nav-link">
+        <a href="#">상담AP</a>
+      </li>
+
+      {% if current_user.is_authenticated %}
+      <li class="nav-link">
+        <a href="#">로그아웃</a>
+      </li>
+      <li class="nav-link">
+        <a href="#">전화번호</a>
+      </li>
+      <li class="nav-link">
+        <a href="#">네트워크</a>
+      </li>
+      <li class="nav-link">
+        <a href="#">물리서버</a>
+      </li>
+      <li class="nav-link">
+        <a href="#">가상머신</a>
+      </li>
+      <li class="nav-link">
+        <a href="#">고객사</a>
+      </li>
+      <li class="nav-link">
+        <a href="#">협력사</a>
+      </li>
+      {% else %}
+      <li class="nav-link">
+        <a href="#">관리자 로그인</a>
+      </li>
+      <li class="nav-link">
+        <a href="#">관리자 등록</a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+
+
   <div class="container">
     {% block content %}
     {% endblock %}
